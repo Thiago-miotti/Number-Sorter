@@ -22,37 +22,6 @@ Aplicação web para sortear números aleatórios dentro de um intervalo definid
 - [Radix UI](https://www.radix-ui.com/) (Switch)
 - [Hugeicons](https://hugeicons.com/)
 
-## Como executar
-
-### Pré-requisitos
-
-- Node.js (recomendado: LTS)
-
-### Instalação e execução
-
-```bash
-# Instalar dependências
-npm install
-
-# Rodar em modo desenvolvimento
-npm run dev
-```
-
-Acesse no navegador o endereço exibido no terminal (geralmente `http://localhost:5173`).
-
-### Outros scripts
-
-```bash
-# Build para produção
-npm run build
-
-# Preview do build
-npm run preview
-
-# Lint
-npm run lint
-```
-
 ## Estrutura do projeto
 
 ```
@@ -66,7 +35,3 @@ src/
 ├── index.css
 └── main.tsx
 ```
-
-## Licença
-
-Projeto de estudo. Uso livre.
