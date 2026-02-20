@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sora: "Sora", "sans-serif";
+  --font-robotoMono: "Roboto Mono", "sans-serif";
+  --font-robotoFlex: "Roboto Flex", "sans-serif";
+
+  /* Colors: Content */
+  --color-content-primary: #ffffff;
+  --color-content-secondary: #c7c9cc;
+  --color-content-tertiary: #d9d9d9;
+  --color-content-brand: #c58de7;
+  --color-content-inverse: #030203;
+
+  /* Colors: Background */
+  --color-background-primary: #020202;
+  --color-background-secondary: #111012;
+  --color-background-tertiary: #24222e;
+  --color-background-brand: #c58de7;
+  --color-background-gray: #3d3d3d;
+
+  /* Colors: Accent */
+  --color-accent-pink: #020202;
+  --color-accent-blue: #91a1fa;
+  --color-accent-green: #77c0af;
+  --color-accent-lime: #d1dc97;
+  --color-accent-red: #e9a9b3;
+
+  /* Gradient: Border */
+  --gradient-border: linear-gradient(
+    90deg,
+    #77c0af 0%,
+    #d1dc97 14.84%,
+    #e9a9b3 32.15%,
+    #d586e0 65.79%,
+    #91a1fa 84.58%
+  );
+
+  /* Gradient: Background */
+  --gradient-background: linear-gradient(90deg, #d586e0 0%, #91a1fa 98.93%);
+
+  /* Gradient: Content */
+  --gradient-content: linear-gradient(90deg, #c7c9cc 0%, #3d3d3d 100%);
+}
+
+/* Gradients */
+
+@utility gradient-content {
+  background-image: var(--gradient-content);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@utility gradient-border {
+  background-image: var(--gradient-border);
+}
+
+@utility gradient-background {
+  background-color: var(--gradient-background);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Typograph Font: Sora */
+
+@utility title-lg {
+  font-family: "Sora", "sans-serif";
+  font-size: 72px;
+  line-height: 130%;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+@utility title-md {
+  font-family: "Sora", "sans-serif";
+  font-size: 40px;
+  line-height: 130%;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+@utility title-sm {
+  font-family: "Sora", "sans-serif";
+  font-size: 40px;
+  line-height: 130%;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+/* Typograph Font: Roboto Mono */
+@utility over {
+  font-family: "Roboto Mono", "sans-serif";
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Typograph Font: Roboto Flex */
+@utility paragraph-lg {
+  font-family: "Roboto Flex", "sans-serif";
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 500;
+  text-transform: none;
+}
+
+@utility paragraph-md {
+  font-family: "Roboto Flex", "sans-serif";
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 500;
+  text-transform: none;
+}
+
+@utility paragraph-sm {
+  font-family: "Roboto Flex", "sans-serif";
+  font-size: 12px;
+  line-height: 150%;
+  font-weight: 500;
+  text-transform: none;
+}
+
+@utility label-md {
+  font-family: "Roboto Flex", "sans-serif";
+  font-size: 20px;
+  line-height: 150%;
+  font-weight: 700;
+  text-transform: none;
+}
+
+@utility label-sm {
+  font-family: "Roboto Flex", "sans-serif";
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 700;
+  text-transform: none;
+}

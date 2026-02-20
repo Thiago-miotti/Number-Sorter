@@ -1,0 +1,6 @@
+ArrowRight02Icon -> seta para a direita
+
+ReplayIcon -> Replay icon
+
+BubbleChatUserIcon -> User thinking icon
+
