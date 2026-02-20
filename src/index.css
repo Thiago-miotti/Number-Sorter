@@ -98,6 +98,14 @@
   text-transform: uppercase;
 }
 
+@utility resultText {
+  font-family: "Roboto Mono", "sans-serif";
+  font-size: 48px;
+  line-height: 150%;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 /* Typograph Font: Roboto Flex */
 @utility paragraph-lg {
   font-family: "Roboto Flex", "sans-serif";
