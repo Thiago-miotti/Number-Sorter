@@ -3,26 +3,26 @@ import { Button } from "./ui/button";
 import { NumberInput } from "./ui/number-input";
 import { Switch } from "./ui/switch";
 import { ArrowRight02Icon } from "@hugeicons/core-free-icons";
-import { useState, type ChangeEvent } from "react";
+import { useState } from "react";
 
 export default function NumbersSort() {
   const [quantityOfNumbers, setQuantityOfNumbers] = useState<string>();
   const [startNumber, setStartNumber] = useState<string>();
   const [endNumber, setEndNumber] = useState<string>();
   const [isEnabled, setIsEnabled] = useState<any>(false);
+  const [numbersResult, setNumbersResult] = useState<Number[] | unknown>();
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    console.log(quantityOfNumbers, startNumber, endNumber, isEnabled);
 
-    console.log(
-      generateRandomNumbers(
-        Number(quantityOfNumbers),
-        Number(startNumber),
-        Number(endNumber),
-        isEnabled,
-      ),
+    generateRandomNumbers(
+      Number(quantityOfNumbers),
+      Number(startNumber),
+      Number(endNumber),
+      isEnabled,
     );
+
+    console.log(numbersResult);
   };
 
   const getRandomNumberInRange = (min: number, max: number) => {
@@ -46,14 +46,14 @@ export default function NumbersSort() {
 
       const numbersArray = [...uniqueRandomNumbers];
 
-      return numbersArray;
+      return setNumbersResult(numbersArray);
     } else {
       const randomNumbers: Array<Number> = [];
       for (let i = 0; i < quantityOfNumbers; i++) {
         randomNumbers.push(getRandomNumberInRange(startNumber, endNumber));
       }
 
-      return randomNumbers;
+      return setNumbersResult(randomNumbers);
     }
   };
 
